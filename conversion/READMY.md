@@ -12,9 +12,13 @@ This repository showcases a test project where we delved into the analysis of co
 
 **Included within this repository are the following files:**
 
-[The_task.pdf](https://github.com/IrinaMoshik/data_portfolio/blob/main/conversion/The_task.pdf): A document outlining the task description and guidelines for conducting the analysis.
+[The_task.pdf](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/The_task.pdf): A document outlining the task description and guidelines for conducting the analysis.
 
-[Resolving_and_conclusion.pdf](https://github.com/IrinaMoshik/data_portfolio/blob/main/conversion/Resolving_and_conclusion.pdf): A comprehensive document detailing the analysis results and the conclusions derived from them.
+[Resolving_and_conclusion.pdf](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/Resolving_and_conclusion.pdf): A comprehensive document detailing the analysis results and the conclusions derived from them.
+
+[pandas_code.ipynb](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/pandas_code.ipynb): Jupyter Notebook containing the code used for data processing and analysis.
+
+[visual.pbix][https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9]: Power BI file with visualizations of the analysis results.
 
 
 
