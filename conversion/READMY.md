@@ -18,7 +18,7 @@ This repository showcases a test project where we delved into the analysis of co
 
 [pandas_code.ipynb](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/pandas_code.ipynb): Jupyter Notebook containing the code used for data processing and analysis.
 
-[visual.pbix][https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9]: Power BI file with visualizations of the analysis results.
+[visual.pbix](https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9): Power BI file with visualizations of the analysis results.
 
 
 
