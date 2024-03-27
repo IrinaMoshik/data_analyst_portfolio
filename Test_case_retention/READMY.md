@@ -8,7 +8,7 @@
 
 [The task, resolving and conclusion](https://docs.google.com/document/d/1rwBdB0FHvQVCilTZL7aFneDjkZz02GscRCMpcEfgma4/edit?usp=sharing): A comprehensive document detailing the analysis results and the conclusions derived from them.
 
-[SQL code](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/pandas_code.ipynb): Txt file containing the code used for data processing and analysis.
+[SQL code](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/Test_case_retention/sql_queries_retention.txt): Txt file containing the code used for data processing and analysis.
 
 [Visual](https://app.powerbi.com/view?r=eyJrIjoiNWQwYzEwOGYtNDBmNi00MzQwLWEyNmItYThlZTEwMzQ2MDUzIiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9): Power BI file with visualizations of the analysis results.
 

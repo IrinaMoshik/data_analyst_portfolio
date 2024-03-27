@@ -6,12 +6,11 @@
 
 **Included within this repository are the following files:**
 
-[The_task.pdf](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/The_task.pdf): A document outlining the task description and guidelines for conducting the analysis.
 
-[Resolving_and_conclusion.pdf](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/Resolving_and_conclusion.pdf): A comprehensive document detailing the analysis results and the conclusions derived from them.
+[The task, resolving and conclusion](https://docs.google.com/document/d/1Ig34dqbN-DrouAgC-e3EmVJDXYYaawCVxLFKcyqDe8Y/edit?usp=sharing): A comprehensive document detailing the analysis results and the conclusions derived from them.
 
-[pandas_code.ipynb](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/conversion/pandas_code.ipynb): Jupyter Notebook containing the code used for data processing and analysis.
+[Python Pandas code](https://github.com/IrinaMoshik/data_analyst_portfolio/blob/main/Test_case_conversion/pandas_code.ipynb): Jupyter Notebook containing the code used for data processing and analysis.
 
-[visual.pbix](https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9): Power BI file with visualizations of the analysis results.
+[Visual](https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9): Power BI file with visualizations of the analysis results.
 
 Feel free to explore these files to gain insight into our analysis process and the resulting findings.
