@@ -1,13 +1,7 @@
-**Test Data Analysis Portfolio**
+**Test Case Description:**
 
-This repository showcases a test project where we delved into the analysis of conversion rates usingreal world data, transformed for this task.  In this task, we were tasked with:
+**This test case illustrates a conversion analysis by month using Python Pandas for data manipulation and Power BI for visualization. The analysis involves processing monthly data sets to calculate conversion rates, which measure the percentage of successful outcomes from potential leads. Python Pandas is utilized to clean, transform, and analyze the data, while Power BI is employed to create interactive visualizations, such as line charts or bar graphs, to present the conversion trends over time effectively.**
 
-**Technical Data Processing:**
-    The dataset utilized in the analysis was tailored from existing data, with transformations specifically tailored for this test project.
-**Analysis Results:** 
-    The aim was to compute the conversion rates and draw insightful conclusions from the analysis.
-**Presentation of Results:** 
-    It was required to present my findings in a concise and comprehensible manner, ensuring the effective communication of insights.
 
 
 **Included within this repository are the following files:**
@@ -20,6 +14,4 @@ This repository showcases a test project where we delved into the analysis of co
 
 [visual.pbix](https://app.powerbi.com/view?r=eyJrIjoiZGQ3MTVmOGQtZjhkMC00NTEwLThkYzItNGJkN2E4NzRjMTQ1IiwidCI6ImFkZGFhOWZlLTliNWUtNDRiNy1iYTE5LTM0OGVmYWY2YzgyZCIsImMiOjl9): Power BI file with visualizations of the analysis results.
 
-
-
-Feel free to explore these files to gain insight into our analysis process and the resulting findings. 
+Feel free to explore these files to gain insight into our analysis process and the resulting findings.

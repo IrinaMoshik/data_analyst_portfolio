@@ -1,0 +1,101 @@
+use excel;
+
+select * from analyst_test_transactions_db
+limit 10;
+
+'''changing datatype'''
+
+ALTER TABLE analyst_test_transactions_db
+MODIFY COLUMN reg_date DATE,
+MODIFY COLUMN transaction_date DATE;
+
+
+
+
+'''creating the table of retention by month for cohorts by registration month'''
+
+with cte as (
+	select 
+		user_id
+		, reg_date
+		, first_value(DATE_FORMAT(reg_date, '%Y-%m')) over(partition by user_id order by reg_date) as cohort_reg
+		, transaction_date
+		, revenue
+		, datediff(transaction_date, reg_date) as diff
+	from
+		analyst_test_transactions_db attd
+	where reg_date > '2015-01-01'
+	order by user_id
+)
+select
+	cohort_reg
+	, count(distinct user_id) as user_quantity
+	, max(diff) as max_diff
+	, round(count(case when diff = 0 then user_id end) / count(distinct user_id)*100) as "0_d_ret"
+	, case when max(diff) >0 then round(count(case when diff <= 30 and diff > 0 then user_id end) / count(distinct user_id)*100) end as "0_30_d_ret"
+	, case when max(diff) >30 then round(count(case when diff <= 60 and diff > 30 then user_id end) / count(distinct user_id)*100) end as "30_60_d_ret"
+	, case when max(diff) >60 then round(count(case when diff <= 90 and diff > 60 then user_id end) / count(distinct user_id)*100) end as "60_90_d_ret"
+	, case when max(diff) >90 then round(count(case when diff <= 120 and diff > 90 then user_id end) / count(distinct user_id)*100) end as "90_120_d_ret"
+	, case when max(diff) >120 then round(count(case when diff <= 150 and diff > 120 then user_id end) / count(distinct user_id)*100) end as "120_150_d_ret"
+	, case when max(diff) >150 then round(count(case when diff <= 180 and diff > 150 then user_id end) / count(distinct user_id)*100) end as "150_180_d_ret"
+	, case when max(diff) >180 then round(count(case when diff <= 210 and diff > 180 then user_id end) / count(distinct user_id)*100) end as "180_210_d_ret"
+	, case when max(diff) >210 then round(count(case when diff <= 240 and diff > 210 then user_id end) / count(distinct user_id)*100) end as "210_240_d_ret"
+	, case when max(diff) >240 then round(count(case when diff <= 270 and diff > 240 then user_id end) / count(distinct user_id)*100) end as "240_270_d_ret"
+	, case when max(diff) >270 then round(count(case when diff <= 300 and diff > 270 then user_id end) / count(distinct user_id)*100) end as "270_300_d_ret"
+	, case when max(diff) >300 then round(count(case when diff <= 330 and diff > 300 then user_id end) / count(distinct user_id)*100) end as "300_330_d_ret"
+	, case when max(diff) >330 then round(count(case when diff <= 365 and diff > 330 then user_id end) / count(distinct user_id)*100) end as "330_365_d_ret"
+from cte
+group by cohort_reg
+order by cohort_reg;
+
+
+
+
+'''creating the table of arpu by month for cohorts by registration month'''
+
+with cte as (
+	select 
+		user_id
+		, reg_date
+		, first_value(DATE_FORMAT(reg_date, '%Y-%m')) over(partition by user_id order by reg_date) as cohort_reg
+		, transaction_date
+		, revenue
+		, datediff(transaction_date, reg_date) as diff
+	from
+		analyst_test_transactions_db attd
+	where reg_date > '2015-01-01'
+	order by user_id
+)
+select
+	cohort_reg
+	, count(distinct user_id) as user_quantity
+	, max(diff) as max_diff
+	, round(sum(case when diff = 0 then revenue end) / count(case when diff = 0 then user_id end)) as "0_d_arpu"
+	, case when max(diff) >0 then round(sum(case when diff <= 30 and diff > 0 then revenue end) / count(case when diff <= 30 and diff > 0 then user_id end)) end as "0_30_d_arpu"
+	, case when max(diff) >30 then round(sum(case when diff <= 60 and diff > 30 then revenue end) / count(case when diff <= 60 and diff > 30 then user_id end)) end as "30_60_d_arpu"
+	, case when max(diff) >60 then round(sum(case when diff <= 90 and diff > 60 then revenue end) / count(case when diff <= 90 and diff > 60 then user_id end)) end as "60_90_d_arpu"
+	, case when max(diff) >90 then round(sum(case when diff <= 120 and diff > 90 then revenue end) / count(case when diff <= 120 and diff > 90 then user_id end)) end as "90_120_d_arpu"
+	, case when max(diff) >120 then round(sum(case when diff <= 150 and diff > 120 then revenue end) / count(case when diff <= 150 and diff > 120 then user_id end)) end as "120_150_d_arpu"
+	, case when max(diff) >150 then round(sum(case when diff <= 180 and diff > 150 then revenue end) / count(case when diff <= 180 and diff > 150 then user_id end)) end as "150_180_d_arpu"
+	, case when max(diff) >180 then round(sum(case when diff <= 210 and diff > 180 then revenue end) / count(case when diff <= 210 and diff > 180 then user_id end)) end as "180_210_d_arpu"
+	, case when max(diff) >210 then round(sum(case when diff <= 240 and diff > 210 then revenue end) / count(case when diff <= 240 and diff > 210 then user_id end)) end as "210_240_d_arpu"
+	, case when max(diff) >240 then round(sum(case when diff <= 270 and diff > 240 then revenue end) / count(case when diff <= 270 and diff > 240 then user_id end)) end as "240_270_d_arpu"
+	, case when max(diff) >270 then round(sum(case when diff <= 300 and diff > 270 then revenue end) / count(case when diff <= 300 and diff > 270 then user_id end)) end as "270_300_d_arpu"
+	, case when max(diff) >300 then round(sum(case when diff <= 330 and diff > 300 then revenue end) / count(case when diff <= 330 and diff > 300 then user_id end)) end as "300_330_d_arpu"
+	, case when max(diff) >330 then round(sum(case when diff <= 365 and diff > 330 then revenue end) / count(case when diff <= 365 and diff > 330 then user_id end)) end as "330_365_d_arpu"
+from cte
+group by cohort_reg
+order by cohort_reg;
+
+
+
+
+
+
+
+
+
+
+
+
+
