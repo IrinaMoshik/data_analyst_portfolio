@@ -1,4 +1,5 @@
-***Sales Analysis***
+***SALES ANALYSIS***
+
 
 **Case Description:**
 
@@ -7,14 +8,11 @@
 First, I clean up the data to make sure it's all good to go. Then, I dive into five key questions:
 
 When did we make the most money, and how much did we earn?
-
 Which city had the most sales?
-
 When should we show ads to boost sales?
-
 What products are often bought together?
-
 What's our best-selling product, why do you think it sold the most?
+
 
 **Included within this repository are the following files:**
 
