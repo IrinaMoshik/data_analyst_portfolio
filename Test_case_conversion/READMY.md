@@ -1,3 +1,5 @@
+***Conversion Analysis***
+
 **Test Case Description:**
 
 **This test case illustrates a conversion analysis by month using Python Pandas for data manipulation and Power BI for visualization. The analysis involves processing monthly data sets to calculate conversion rates, which measure the percentage of successful outcomes from potential leads. Python Pandas is utilized to clean, transform, and analyze the data, while Power BI is employed to create interactive visualizations, such as line charts or bar graphs, to present the conversion trends over time effectively.**
